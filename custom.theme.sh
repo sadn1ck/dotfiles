@@ -1,0 +1,1 @@
+/home/anik/.oh-my-bash/custom/themes/custom/custom.theme.sh
