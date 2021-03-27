@@ -7,7 +7,7 @@ font pango:Product Sans 11
 # Use Mouse+$super to drag floating windows to their wanted position
 floating_modifier $super
 
-exec --no-startup-id feh --bg-scale /home/anik/Pictures/clouds1.jpg #wallpaper
+exec --no-startup-id feh --bg-scale /home/anik/.config/i3/walls/pink_clouds.jpg #wallpaper
 exec --no-startup-id udiskie -t #removable drives
 exec albert &
 exec blueman-applet & #bluetooth
@@ -20,9 +20,7 @@ exec xinput --set-prop 'ELAN1200:00 04F3:30BA Touchpad' 'libinput Natural Scroll
 exec picom -b
 
 bindsym $super+Return exec kitty #kitty terminal
-bindsym $super+l exec xflock4 #lock screen
 bindsym $super+Shift+f exec nautilus
-
 
 #change volume
 bindsym XF86AudioRaiseVolume exec amixer -q set Master "5%+" #increase volume

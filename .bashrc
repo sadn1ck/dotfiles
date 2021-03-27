@@ -101,7 +101,6 @@ source $OSH/oh-my-bash.sh
 # alias bashconfig="mate ~/.bashrc"
 # alias ohmybash="mate ~/.oh-my-bash"
 alias gcsm='git commit -s -S -m'
-alias azremote="ssh -i ~/.ssh/azure.pem anik@138.91.41.62"
 alias dcu="docker-compose up"
 alias dcd="docker-compose down"
 alias sus='systemctl suspend'
