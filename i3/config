@@ -1,0 +1,132 @@
+set $super Mod4
+set $alt Mod1
+# text
+# set font
+font pango:Product Sans 11
+
+# Use Mouse+$super to drag floating windows to their wanted position
+floating_modifier $super
+
+exec --no-startup-id feh --bg-scale /home/anik/Pictures/clouds1.jpg #wallpaper
+exec --no-startup-id udiskie -t #removable drives
+exec albert &
+exec blueman-applet & #bluetooth
+exec  /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 & #administration
+exec flameshot &
+exec optimus-manager-qt &
+exec xinput --set-prop 'ELAN1200:00 04F3:30BA Touchpad' 'libinput Accel Speed' 0.2
+exec xinput --set-prop 'ELAN1200:00 04F3:30BA Touchpad' 'libinput Tapping Enabled' 1
+exec xinput --set-prop 'ELAN1200:00 04F3:30BA Touchpad' 'libinput Natural Scrolling Enabled' 1
+exec picom -b
+
+bindsym $super+Return exec kitty #kitty terminal
+bindsym $super+l exec xflock4 #lock screen
+bindsym $super+Shift+f exec nautilus
+
+
+#change volume
+bindsym XF86AudioRaiseVolume exec amixer -q set Master "5%+" #increase volume
+bindsym XF86AudioLowerVolume exec amixer -q set Master "5%-" #decrease volume
+bindsym XF86AudioMute exec amixer set Master toggle #mute volume
+bindsym XF86AudioMicMute exec amixer set Capture toggle #mute microphone
+
+bindsym $alt+q kill
+
+# change focus
+bindsym $super+Left focus left
+bindsym $super+Down focus down
+bindsym $super+Up focus up
+bindsym $super+Right focus right
+
+# move focused window
+bindsym $super+Shift+Left move left
+bindsym $super+Shift+Down move down
+bindsym $super+Shift+Up move up
+bindsym $super+Shift+Right move right
+
+# switch to workspace
+bindsym $alt+1 workspace 1
+bindsym $alt+2 workspace 2
+bindsym $alt+3 workspace 3
+bindsym $alt+4 workspace 4
+bindsym $alt+5 workspace 5
+bindsym $alt+6 workspace 6
+bindsym $alt+7 workspace 7
+bindsym $alt+8 workspace 8 
+bindsym $alt+9 workspace 9 
+bindsym $alt+0 workspace 10 
+
+# move focused container to workspace
+bindsym $alt+Shift+1 move container to workspace 1
+bindsym $alt+Shift+2 move container to workspace 2
+bindsym $alt+Shift+3 move container to workspace 3
+bindsym $alt+Shift+4 move container to workspace 4
+bindsym $alt+Shift+5 move container to workspace 5
+bindsym $alt+Shift+6 move container to workspace 6
+bindsym $alt+Shift+7 move container to workspace 7
+bindsym $alt+Shift+8 move container to workspace 8
+bindsym $alt+Shift+9 move container to workspace 9
+bindsym $alt+Shift+0 move container to workspace 10
+bindsym Print exec flameshot gui 
+
+# restart i3 in place
+bindsym $super+Shift+r restart
+# quit i3
+bindsym $super+Shift+q exec "i3-nagbar -t warning -m 'Quit?' -b 'Yes' 'i3-msg exit'"
+
+# resize window
+bindsym $alt+Ctrl+Right resize shrink width 10 px or 10 ppt
+bindsym $alt+Ctrl+Up resize grow height 10 px or 10 ppt
+bindsym $alt+Ctrl+Down resize shrink height 10 px or 10 ppt
+bindsym $alt+Ctrl+Left resize grow width 10 px or 10 ppt
+
+# split in horizontal orientation
+bindsym $super+h split h
+
+# split in vertical orientation
+bindsym $super+v split v
+
+# enter fullscreen mode for the focused container
+bindsym $super+f fullscreen toggle
+
+# toggle tiling / floating
+bindsym $super+space floating toggle
+
+# change focus between tiling / floating windows
+bindsym $super+Shift+space focus mode_toggle
+
+# window borders
+client.focused          #FFAF00 #121212 #FFFFFF #FFAF00   #FFAF00
+client.focused_inactive #5E5E5E #5E5E5E #FFFFFF #5E5E5E   #5E5E5E
+client.unfocused        #5E5E5E #5E5E5E #FFFFFF #292D2E   #292D2E
+client.urgent           #FF0000 #FF0000 #FFFFFF #FF0000   #FF0000
+client.placeholder      #424242 #424242 #FFFFFF #424242   #424242
+
+client.background       #FFFFFF
+
+for_window [class=".*"] border pixel 1
+
+for_window [class=Viewnior|feh|Lxappearance|Lxtask|Pavucontrol|Nautilus|emulator|telegram-desktop|android-studio] floating enable
+
+for_window [class=Xfburn|GParted|System-config-printer.py|Lxtask|Pavucontrol|Exo-helper*|Lxrandr|Arandr|Lxappearance] focus
+
+for_window [title="^Android Emulator -"] floating enable
+for_window [title="^Android Studio -"] floating enable
+for_window [title=".*Telegram*"] floating enable
+for_window [title=".*Steam*"] floating enable
+for_window [title=".*Friends*"] floating enable
+for_window [title=".*MATLAB*"] floating enable
+
+# Launch NetworkManager applet
+exec --no-startup-id nm-applet
+
+# Launch polybar
+exec /home/anik/.config/polybar/launch.sh &
+
+#i3-gaps
+# smart_gaps on
+gaps inner 1
+gaps outer 1
+
+bindsym $super+Shift+b border normal
+bindsym $super+Shift+Ctrl+b border pixel 0
