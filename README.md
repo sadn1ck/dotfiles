@@ -19,6 +19,8 @@
 - feh
 - nautilus, flameshot, optimus-manager (optional, remove from i3 config if not needed)
 - polkit agent (gnome in i3 config)
+- aur/ttf-meslo-nerd-font-powerlevel10k
+- vscode
 
 ## screenshot
 

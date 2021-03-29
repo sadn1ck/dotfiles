@@ -28,8 +28,8 @@ background = ${color.bg}
 foreground = ${color.fg}
 width = 100%
 height = 26px
-font-0 = "FiraCode Nerd Font Mono:size=10;2"
-font-1 = "FiraCode Nerd Font Mono:size=18;4"
+font-0 = "MesloLGS NF:size=10;2"
+font-1 = "MesloLGS NF:size=18;4"
 modules-left = power cpu mem temp disk separator
 modules-center = i3
 modules-right = pulseaudio battery redshift time
