@@ -7,7 +7,7 @@ font pango:MesloLGS NF 11
 # Use Mouse+$super to drag floating windows to their wanted position
 floating_modifier $super
 
-exec --no-startup-id feh --bg-scale /home/anik/.config/i3/walls/pink_clouds.jpg #wallpaper
+exec --no-startup-id feh --bg-scale /home/anik/dotfiles/walls/coast_1.png
 exec --no-startup-id udiskie -t #removable drives
 exec albert &
 exec blueman-applet & #bluetooth
