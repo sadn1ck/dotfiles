@@ -19,7 +19,7 @@ exec xinput --set-prop 'ELAN1200:00 04F3:30BA Touchpad' 'libinput Tapping Enable
 exec xinput --set-prop 'ELAN1200:00 04F3:30BA Touchpad' 'libinput Natural Scrolling Enabled' 1
 exec picom -b
 
-bindsym $super+Return exec kitty #kitty terminal
+bindsym $super+Return exec terminator
 bindsym $super+Shift+f exec nautilus
 
 #change volume
@@ -103,8 +103,9 @@ client.placeholder      #424242 #424242 #FFFFFF #424242   #424242
 client.background       #FFFFFF
 
 for_window [class=".*"] border pixel 1
+for_window [title="Albert"] border pixel 0
 
-for_window [class=Viewnior|feh|Lxappearance|Lxtask|Pavucontrol|Nautilus|emulator|telegram-desktop|android-studio] floating enable
+for_window [class=Viewnior|feh|Lxappearance|Lxtask|Pavucontrol|Nautilus|emulator|telegram-desktop|android-studio|albert] floating enable
 
 for_window [class=Xfburn|GParted|System-config-printer.py|Lxtask|Pavucontrol|Exo-helper*|Lxrandr|Arandr|Lxappearance] focus
 

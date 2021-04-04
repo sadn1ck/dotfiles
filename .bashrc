@@ -105,6 +105,8 @@ alias dcu="docker-compose up"
 alias dcd="docker-compose down"
 alias sus='systemctl suspend'
 alias ls='exa'
+alias azremote="ssh -i ~/.ssh/azure.pem anik@13.76.254.185"
+
 
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
@@ -122,7 +124,7 @@ export PATH=$PATH:$ANDROID_HOME/tools
 export PATH=$PATH:$ANDROID_HOME/tools/bin
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 # Android end
-
+export EDITOR=vim
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

@@ -1,0 +1,19 @@
+[global_config]
+  suppress_multiple_term_dialog = True
+  title_use_system_font = False
+  title_font = Inter 10
+[keybindings]
+[profiles]
+  [[default]]
+    background_color = "#212121"
+    background_darkness = 0.97
+    background_type = transparent
+    cursor_color = "#aaaaaa"
+    font = MesloLGS NF 10
+    foreground_color = "#000000"
+    scrollback_infinite = True
+    palette = "#000000:#cc0000:#4e9a06:#c4a000:#3465a4:#75507b:#06989a:#f6f5f4:#555753:#ef2929:#8ae234:#fce94f:#729fcf:#ad7fa8:#34e2e2:#c0bfbc"
+    use_system_font = False
+    use_theme_colors = True
+    bold_is_bright = True
+[plugins]
