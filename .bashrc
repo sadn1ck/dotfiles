@@ -105,8 +105,7 @@ alias dcu="docker-compose up"
 alias dcd="docker-compose down"
 alias sus='systemctl suspend'
 alias ls='exa'
-alias azremote="ssh -i ~/.ssh/azure.pem anik@13.76.254.185"
-
+source /home/anik/dotfiles/ssh.sh
 
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
