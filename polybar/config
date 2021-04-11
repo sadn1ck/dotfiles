@@ -30,7 +30,7 @@ width = 100%
 height = 26px
 font-0 = "MesloLGS NF:size=10;2"
 font-1 = "MesloLGS NF:size=18;4"
-modules-left = power cpu mem temp disk separator
+modules-left = power cpu mem temp disk separator xwindow
 modules-center = i3
 modules-right = pulseaudio battery redshift time
 tray-position = right
@@ -239,14 +239,11 @@ label-muted-padding = ${vars.spacing}
 label-muted-overline = ${color.c9}
 click-right = pavucontrol &
 
-[module/firefox]
-type = custom/text
-content = 
-click-left = microsoft-edge-dev &
-content-padding = ${vars.spacing}
-content-overline = ${color.c10}
-
 [module/separator]
 type = custom/text
 content = " "
 content-padding= 0.5
+
+[module/xwindow]
+type = internal/xwindow
+label = %title:0:50:...%

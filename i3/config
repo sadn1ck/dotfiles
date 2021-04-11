@@ -17,7 +17,7 @@ exec optimus-manager-qt &
 exec xinput --set-prop 'ELAN1200:00 04F3:30BA Touchpad' 'libinput Accel Speed' 0.2
 exec xinput --set-prop 'ELAN1200:00 04F3:30BA Touchpad' 'libinput Tapping Enabled' 1
 exec xinput --set-prop 'ELAN1200:00 04F3:30BA Touchpad' 'libinput Natural Scrolling Enabled' 1
-exec picom -b
+# exec picom -b
 
 bindsym $super+Return exec terminator
 bindsym $super+Shift+f exec nautilus
@@ -122,10 +122,10 @@ exec --no-startup-id nm-applet
 # Launch polybar
 exec /home/anik/.config/polybar/launch.sh &
 
-#i3-gaps
+# i3-gaps
 # smart_gaps on
-gaps inner 1
-gaps outer 1
+gaps inner 10
+gaps outer 10
 
 bindsym $super+Shift+b border normal
 bindsym $super+Shift+Ctrl+b border pixel 0

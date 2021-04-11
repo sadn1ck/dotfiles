@@ -105,6 +105,7 @@ alias dcu="docker-compose up"
 alias dcd="docker-compose down"
 alias sus='systemctl suspend'
 alias ls='exa'
+alias setmonofont='gsettings set org.gnome.desktop.interface monospace-font-name'
 source /home/anik/dotfiles/ssh.sh
 
 export GOPATH=$HOME/go
@@ -114,7 +115,7 @@ export PATH=$PATH:$HOME/.local/bin
 export PATH="/usr/local/MATLAB/R2020b/bin:$PATH"
 export PATH="$HOME/.poetry/bin:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
-
+export PATH="$HOME/.local/share/gem/ruby/2.7.0/bin:$PATH"
 # Android start
 export ANDROID_HOME=$HOME/Android/Sdk
 export ANDROID_SDK_ROOT=$ANDROID_HOME

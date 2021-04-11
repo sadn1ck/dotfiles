@@ -45,14 +45,7 @@
     "[json]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    "workbench.iconTheme": "material-icon-theme",
-    "customizeUI.activityBarHideSettings": true,
-    "customizeUI.activityBar": "bottom",
-    "customizeUI.font.regular": "Roboto",
-    "customizeUI.fontSizeMap": {
-        "13px": "11px",
-        "monospace": "11px"
-    },
+    "workbench.iconTheme": "file-icons",
     "files.exclude": {
         "**/.classpath": true,
         "**/.project": true,
@@ -73,5 +66,11 @@
     "[markdown]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    "workbench.colorTheme": "Min Dark"
+    "RPC.workspaceText": "wtf",
+    "RPC.hideWorkspaces": [
+        "/home/anik/projects/investu/**/*"
+    ],
+    "RPC.idleText": "😴",
+    "RPC.showWorkspace": false,
+    "workbench.colorTheme": "One Dark Pro"
 }

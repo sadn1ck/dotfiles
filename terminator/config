@@ -9,7 +9,7 @@
     background_darkness = 0.97
     background_type = transparent
     cursor_color = "#aaaaaa"
-    font = MesloLGS NF 10
+    font = Jetbrains Mono 10
     foreground_color = "#000000"
     scrollback_infinite = True
     palette = "#000000:#cc0000:#4e9a06:#c4a000:#3465a4:#75507b:#06989a:#f6f5f4:#555753:#ef2929:#8ae234:#fce94f:#729fcf:#ad7fa8:#34e2e2:#c0bfbc"
