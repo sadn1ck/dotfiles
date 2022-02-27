@@ -1,0 +1,77 @@
+{
+    "editor.fontFamily": "MesloLGS Nerd Font Mono",
+    "editor.fontLigatures": true,
+    "editor.fontWeight": "500",
+    "editor.lineHeight": 1.7,
+    "terminal.integrated.fontFamily": "MesloLGS Nerd Font Mono",
+    "terminal.integrated.fontWeight": "500",
+    "terminal.integrated.lineHeight": 1.1,
+    "workbench.iconTheme": "file-icons",
+    "window.menuBarVisibility": "hidden",
+    "window.enableMenuBarMnemonics": false,
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "diffEditor.wordWrap": "off",
+    "editor.inlineSuggest.enabled": true,
+    "github.copilot.enable": {
+        "*": false,
+    },
+    "rust-client.rustupPath": "/home/anik/.cargo/bin/rustup",
+    "rust-client.updateOnStartup": true,
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "editor.wordWrap": "bounded",
+    "editor.minimap.enabled": false,
+    "[c]": {
+        "editor.defaultFormatter": "xaver.clang-format"
+    },
+    "[vue]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "security.workspace.trust.untrustedFiles": "open",
+    "window.title": "${rootName}${separator}${activeEditorShort}",
+    "[cpp]": {
+        "editor.defaultFormatter": "xaver.clang-format"
+    },
+    "editor.quickSuggestions": {
+        "strings": true
+    },
+    "[markdown]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "python.formatting.provider": "black",
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "editor.wordWrapColumn": 100,
+    "editor.linkedEditing": true,
+    "[yaml]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "workbench.colorTheme": "Material Theme Darker",
+    "[mdx]": {
+        "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
+    },
+    "markdown-pdf.highlightStyle": "github-gist.css",
+    "markdown-pdf.margin.bottom": "2cm",
+    "markdown-pdf.margin.top": "2cm",
+    "markdown.preview.lineHeight": 1.4,
+    "markdown.preview.fontSize": 13,
+    "markdown-pdf.headerTemplate": "<div style=\"font-size: 9px; margin: 0 auto;\"> 510819023 | Anik Das </div>",
+    "markdown-pdf.footerTemplate": "<div style=\"font-size: 9px; margin: 0 auto;\"><span class='pageNumber'></span> / <span class='totalPages'></span></div>",
+    "window.zoomLevel": 1,
+}
